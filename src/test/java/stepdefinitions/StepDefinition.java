@@ -35,7 +35,7 @@ public class StepDefinition {
 
 		driver.findElement(By.id("txtUsername")).sendKeys(strArg1);
 		driver.findElement(By.id("txtPassword")).sendKeys(strArg2);
-		driver.findElement(By.id("btnLoginNNNNNNNNNNNN")).click();
+		driver.findElement(By.id("btnLogin")).click();
 		System.out.println("login successful");
 	}
 
@@ -51,7 +51,7 @@ public class StepDefinition {
 
 	@Then("^Error message is populated$")
 	public void error_message_is_populated() throws Throwable {
-		Assert.assertTrue(driver.findElement(By.id("spanMessage")).getText().equals("Invalid credentials"));
+		Assert.assertTrue(driver.findElement(By.id("spanMessage")).getText().equals("Invalid DELETE credentials"));
 		System.out.println("Invalid credentials message is displayed");
 	}
 
