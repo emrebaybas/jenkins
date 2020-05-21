@@ -35,7 +35,7 @@ public class StepDefinition {
 
 		driver.findElement(By.id("txtUsername")).sendKeys(strArg1);
 		driver.findElement(By.id("txtPassword")).sendKeys(strArg2);
-		driver.findElement(By.id("btnLogin")).click();
+		driver.findElement(By.id("btnLoginNNNNNNNNNNNN")).click();
 		System.out.println("login successful");
 	}
 
